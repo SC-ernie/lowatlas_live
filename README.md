@@ -14,13 +14,11 @@ English:
 - blackout-customs.html
 - barber.html
 - detailing.html
-- pomona-water-ice.html
 
 Spanish:
 - blackout-customs-es.html
 - barber-es.html
 - detailing-es.html
-- pomona-water-ice-es.html
 
 ## Shared files
 
@@ -80,3 +78,12 @@ blackout-customs-logo.svg
 Upload it beside `index.html`, `styles.css`, etc.
 
 This avoids needing an `assets/` folder and prevents the broken-image issue shown on GitHub Pages.
+
+## November 2026 update — brand assets and favicon
+
+- Pomona Water & Ice was removed from both English and Spanish home-page portfolios; its HTML pages are deliberately not published in this package.
+- All existing remaining project pages and copy are preserved.
+- Every HTML page now references `favicon.svg`, `favicon-32.png`, and `apple-touch-icon.png` at the repository root.
+- All visual branding files are in `brand-assets/`. Facebook cover: `lowatlas-facebook-cover.png`; profile: `lowatlas-profile-logo.png`; intro post: `lowatlas-intro-post.png`. Editable SVG counterparts are included.
+- Site colors unchanged: #0B0B0B, #F3F0E8, #D4FF63. CSS and JavaScript unchanged.
+- Upload repository contents into the ROOT of your GitHub Pages repo, not as a nested folder. Keep files such as index.html and favicon.svg alongside each other.
