@@ -1,0 +1,18 @@
+# Security headers for Cloudflare Pages / Netlify-style hosts.
+#
+# GitHub Pages ignores this file. If the site stays on GitHub Pages behind
+# Cloudflare, add the same headers as a Cloudflare "Response Header
+# Transform Rule" instead. Step by step: CLOUDFLARE-SETUP.md
+#
+# Every page also carries the same Content-Security-Policy in a <meta> tag,
+# so the "no third-party scripts" guarantee works on any host.
+# If you change the policy, change it in BOTH places.
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://images.unsplash.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin

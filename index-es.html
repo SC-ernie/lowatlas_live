@@ -4,15 +4,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+
+  <!-- SECURITY: this Content Security Policy makes the browser refuse any
+       third-party script, so no tracker can load by accident.
+       If you ever add analytics or ad pixels: update this line (and _headers),
+       and add a consent step first. See CLOUDFLARE-SETUP.md. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://images.unsplash.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <meta
     name="description"
-    content="Lowatlas crea sitios web profesionales para negocios locales."
+    content="Lowatlas arregla tus perfiles de negocio en Google y Meta, construye un sitio web limpio y maneja anuncios para negocios locales en Pomona y el Valle de Antelope."
   >
 
   <title>
-    Lowatlas — Sitios Web para Negocios Locales
+    Lowatlas — Sitios Web, Perfiles de Negocio y Anuncios para Negocios Locales
   </title>
+
+  <link rel="canonical" href="https://lowatlas.com/index-es.html">
+  <link rel="alternate" hreflang="en" href="https://lowatlas.com/">
+  <link rel="alternate" hreflang="es" href="https://lowatlas.com/index-es.html">
+  <link rel="alternate" hreflang="x-default" href="https://lowatlas.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lowatlas">
+  <meta property="og:title" content="Lowatlas — Sitios Web, Perfiles de Negocio y Anuncios para Negocios Locales">
+  <meta property="og:description" content="Lowatlas arregla tus perfiles de negocio en Google y Meta, construye un sitio web limpio y maneja anuncios para negocios locales en Pomona y el Valle de Antelope.">
+  <meta property="og:url" content="https://lowatlas.com/index-es.html">
+  <meta property="og:image" content="https://lowatlas.com/favicon-512.png">
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Lowatlas",
+  "url": "https://lowatlas.com/",
+  "description": "Google and Meta business profile cleanup, websites, and ads for local businesses.",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Pomona, CA"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Antelope Valley, CA"
+    }
+  ],
+  "knowsLanguage": [
+    "en",
+    "es"
+  ]
+}
+  </script>
 
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -22,7 +65,6 @@
 
 <body>
 
-  
 <header class="site-header">
   <div class="container nav">
 
@@ -31,12 +73,10 @@
     </a>
 
     <nav class="nav__links" aria-label="Main navigation">
-      
-        <a href="index-es.html#work">Trabajo</a>
-        <a href="index-es.html#pricing">Precios</a>
-        <a href="index-es.html#process">Proceso</a>
-        <a href="index-es.html#faq">Preguntas</a>
-        
+      <a href="index-es.html#services">Servicios</a>
+      <a href="index-es.html#work">Trabajo</a>
+      <a href="index-es.html#pricing">Precios</a>
+      <a href="index-es.html#faq">Preguntas</a>
     </nav>
 
     <div class="nav__right">
@@ -46,18 +86,15 @@
         Disponibilidad limitada
       </div>
 
-      
-        <div class="language-switch">
-          <a href="index.html">EN</a>
-          <a class="active" href="index-es.html">ES</a>
-        </div>
-        
+      <div class="language-switch">
+        <a href="index.html" hreflang="en" lang="en">EN</a>
+        <a class="active" aria-current="page" href="index-es.html" hreflang="es" lang="es">ES</a>
+      </div>
 
     </div>
 
   </div>
 </header>
-
 
   <main>
 
@@ -72,11 +109,13 @@
         <div>
 
           <p class="eyebrow">
-            Estudio web independiente
+            Sitios web · Perfiles de negocio · Anuncios
           </p>
 
           <h1 class="display hero__title">
-            Sitios web profesionales para <span>negocios locales.</span>
+            Que te encuentren.<br>
+            Que confíen.<br>
+            <span>Que te llamen.</span>
           </h1>
 
         </div>
@@ -84,13 +123,13 @@
         <div>
 
           <p class="hero__copy">
-            Sitios modernos y limpios, diseñados alrededor de tus servicios, tu trabajo y una forma sencilla para que tus clientes te contacten.
+            Lowatlas arregla cómo aparece tu negocio en Google y Meta, construye el sitio web que lo respalda y maneja los anuncios que traen clientes.
           </p>
 
           <div class="hero__actions">
 
-            <a class="button button--primary" href="#work">
-              Ver mi trabajo ↓
+            <a class="button button--primary" href="#check">
+              Revisión gratis ↓
             </a>
 
             <a class="button" href="mailto:lowatlas.studio@gmail.com">
@@ -100,7 +139,7 @@
           </div>
 
           <p class="hero__note">
-            Los proyectos normalmente toman entre 1 y 3 semanas según el alcance, el contenido disponible y las revisiones.
+            Empieza con un servicio o combina los tres. Los sitios web normalmente toman entre 1 y 3 semanas según el alcance, el contenido disponible y las revisiones.
           </p>
 
         </div>
@@ -140,6 +179,126 @@
 
 
     <!-- =====================================================
+         SERVICES
+         Three services = the three signature steps above.
+         Prices here are "starting at"; full detail is in PRICING.
+         ===================================================== -->
+
+    <section id="services" class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            Servicios
+          </p>
+
+          <div>
+
+            <h2 class="display section-heading__title">
+              Tres servicios. Un camino simple de la búsqueda al cliente.
+            </h2>
+
+            <p class="section-heading__copy">
+              Cada uno funciona por separado. Juntos funcionan así: te ven en tu perfil, confían en tu sitio web y te contactan, y los anuncios llevan a más gente por ese camino.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="service-grid">
+
+          <article class="service-card">
+
+            <p class="service-card__step"><span>01</span> VER</p>
+
+            <h3 class="service-card__name">Limpieza de Perfil de Negocio</h3>
+
+            <p class="service-card__purpose">
+              Arregla cómo apareces en Google y Meta, donde tus clientes buscan primero.
+            </p>
+
+            <ul class="price-card__list">
+              <li>Reclamar o recuperar y verificar tu perfil</li>
+              <li>Corregir horarios, teléfono, dirección y categorías</li>
+              <li>Servicios, descripción, fotos y enlaces</li>
+              <li>Google, Meta (Facebook + Instagram) o ambos</li>
+            </ul>
+
+            <div class="service-card__foot">
+              <div>
+                <span class="price-prefix">Desde</span>
+                <strong class="service-card__price">$120<small>pago único</small></strong>
+              </div>
+              <a class="button button--small" href="#pricing-profile">Ver precios ↓</a>
+            </div>
+
+          </article>
+
+          <article class="service-card">
+
+            <p class="service-card__step"><span>02</span> CONFIAR</p>
+
+            <h3 class="service-card__name">Sitio Web</h3>
+
+            <p class="service-card__purpose">
+              Un sitio limpio y rápido que se conecta con tu perfil y le da a tus clientes un solo lugar para llamar, reservar o cotizar.
+            </p>
+
+            <ul class="price-card__list">
+              <li>Diseño personalizado para móvil</li>
+              <li>Conectado a tu perfil y a Instagram</li>
+              <li>Llamar, reservar o escribir con un toque</li>
+              <li>Seguridad de Cloudflare desde el primer día</li>
+            </ul>
+
+            <div class="service-card__foot">
+              <div>
+                <span class="price-prefix">Desde</span>
+                <strong class="service-card__price">$500<small>pago único</small></strong>
+              </div>
+              <a class="button button--small" href="#pricing-website">Ver precios ↓</a>
+            </div>
+
+          </article>
+
+          <article class="service-card">
+
+            <p class="service-card__step"><span>03</span> CONTACTAR</p>
+
+            <h3 class="service-card__name">Anuncios en Google y Meta</h3>
+
+            <p class="service-card__purpose">
+              Anuncios que llevan gente a tu perfil y a tu sitio web, configurados y manejados por mí.
+            </p>
+
+            <ul class="price-card__list">
+              <li>Google Ads, Meta Ads o ambos</li>
+              <li>Segmentación local en tu zona de servicio</li>
+              <li>Pensados para llamadas, direcciones y mensajes</li>
+              <li>Resumen mensual de resultados</li>
+            </ul>
+
+            <div class="service-card__foot">
+              <div>
+                <span class="price-prefix">Desde</span>
+                <strong class="service-card__price">$350<small>/mes</small></strong>
+              </div>
+              <a class="button button--small" href="#pricing-ads">Ver precios ↓</a>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
          WORK
          ===================================================== -->
 
@@ -168,13 +327,11 @@
         </div>
 
         <div class="work-grid">
-          
+
 <article class="work-card work-card--featured">
 
-  
-        <div class="work-card__visual work-card__logo-photo">
-          <img src="blackout-customs-logo.svg" alt="Blackout Customs logo">
-        
+  <div class="work-card__visual work-card__logo-photo">
+    <img src="blackout-customs-logo.svg" alt="Blackout Customs logo">
 
     <div class="work-card__top">
 
@@ -222,14 +379,12 @@
 
     <div class="work-card__actions">
 
-      
-        <a class="button button--accent button--small"
-           href="https://blackoutcustoms.net"
-           target="_blank"
-           rel="noopener noreferrer">
-          Ver sitio en vivo ↗
-        </a>
-        
+      <a class="button button--accent button--small"
+         href="https://blackoutcustoms.net"
+         target="_blank"
+         rel="noopener noreferrer">
+        Ver sitio en vivo ↗
+      </a>
 
       <a class="button button--small" href="blackout-customs-es.html">
         Ver proyecto ↗
@@ -243,11 +398,9 @@
 
 <article class="work-card">
 
-  
-        <div class="work-card__visual">
-          <img class="work-card__photo" src="https://images.unsplash.com/photo-1703792686658-24e62d626ed2?auto=format&fit=crop&w=1600&q=85" alt="Modern Barber">
-          <div class="work-card__shade"></div>
-        
+  <div class="work-card__visual">
+    <img class="work-card__photo" src="https://images.unsplash.com/photo-1703792686658-24e62d626ed2?auto=format&fit=crop&w=1600&q=85" alt="Modern Barber" referrerpolicy="no-referrer" loading="lazy">
+    <div class="work-card__shade"></div>
 
     <div class="work-card__top">
 
@@ -295,8 +448,6 @@
 
     <div class="work-card__actions">
 
-      
-
       <a class="button button--small" href="barber-es.html">
         Ver proyecto ↗
       </a>
@@ -309,11 +460,9 @@
 
 <article class="work-card">
 
-  
-        <div class="work-card__visual">
-          <img class="work-card__photo" src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1600&q=85" alt="Detailing Studio">
-          <div class="work-card__shade"></div>
-        
+  <div class="work-card__visual">
+    <img class="work-card__photo" src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1600&q=85" alt="Detailing Studio" referrerpolicy="no-referrer" loading="lazy">
+    <div class="work-card__shade"></div>
 
     <div class="work-card__top">
 
@@ -361,8 +510,6 @@
 
     <div class="work-card__actions">
 
-      
-
       <a class="button button--small" href="detailing-es.html">
         Ver proyecto ↗
       </a>
@@ -373,7 +520,6 @@
 
 </article>
 
-
         </div>
 
       </div>
@@ -382,7 +528,7 @@
 
 
     <!-- =====================================================
-         WHAT I BUILD
+         HOW I WORK
          ===================================================== -->
 
     <section class="section">
@@ -392,52 +538,244 @@
         <div class="section-heading">
 
           <p class="eyebrow">
-            Lo que construyo
+            Cómo trabajo
           </p>
 
           <h2 class="display section-heading__title">
-            Sitios pequeños que hacen bien lo importante.
+            Cercano, directo y hecho para durar.
           </h2>
 
         </div>
 
         <div class="build-grid">
-          
-        <article class="build-item">
-          <span class="build-item__icon">↯</span>
-          <div>
-            <h3>Rápido</h3>
-            <p>Sitios ligeros sin software innecesario.</p>
-          </div>
-        </article>
-        
-
-        <article class="build-item">
-          <span class="build-item__icon">◫</span>
-          <div>
-            <h3>Móvil primero</h3>
-            <p>Diseñado pensando en la pantalla que tus clientes realmente usan.</p>
-          </div>
-        </article>
-        
-
-        <article class="build-item">
-          <span class="build-item__icon">↗</span>
-          <div>
-            <h3>Fácil de contactar</h3>
-            <p>Llamadas, formularios, Instagram, reservaciones o direcciones.</p>
-          </div>
-        </article>
-        
 
         <article class="build-item">
           <span class="build-item__icon">◎</span>
           <div>
-            <h3>Hecho para tu negocio</h3>
-            <p>Tus servicios, fotos, reseñas y contenido real.</p>
+            <h3>Todo es tuyo</h3>
+            <p>El dominio, los perfiles y las cuentas de anuncios quedan a tu nombre. Yo trabajo como administrador y puedes quitarme el acceso cuando quieras.</p>
           </div>
         </article>
-        
+
+        <article class="build-item">
+          <span class="build-item__icon">◫</span>
+          <div>
+            <h3>English + Español</h3>
+            <p>Habla conmigo en el idioma en que te sientas más cómodo. Todo este sitio es bilingüe.</p>
+          </div>
+        </article>
+
+        <article class="build-item">
+          <span class="build-item__icon">↯</span>
+          <div>
+            <h3>Seguro desde el inicio</h3>
+            <p>La protección de Cloudflare, HTTPS y los encabezados de seguridad vienen incluidos, no como un extra.</p>
+          </div>
+        </article>
+
+        <article class="build-item">
+          <span class="build-item__icon">↗</span>
+          <div>
+            <h3>Trato directo</h3>
+            <p>Hablas con la persona que hace el trabajo. Sin gerentes de cuenta ni filas de tickets.</p>
+          </div>
+        </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PRESENCE CHECK  (interactive — logic in script.js)
+         Questions, weights, grades and next steps are all editable
+         here. Weights (data-weight) should add up to 100.
+         data-group decides which service gets recommended:
+         profile -> website -> ads.
+         ===================================================== -->
+
+    <section id="check" class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            Revisión gratis
+          </p>
+
+          <div>
+
+            <h2 class="display section-heading__title">
+              ¿Qué tan fácil es encontrarte, confiar en ti y contactarte?
+            </h2>
+
+            <p class="section-heading__copy">
+              Marca lo que sea cierto para tu negocio hoy. Recibes un puntaje, tus mayores huecos y lo que yo arreglaría primero. Todo corre en tu navegador: no se envía ni se guarda nada a menos que decidas escribirme.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="check" data-check data-state="idle" data-sr-template="Puntaje: {n} de 100">
+
+          <div class="check__list" role="group" aria-label="Preguntas de la revisión de presencia">
+
+            <label class="check__item">
+              <input type="checkbox" data-weight="20" data-group="profile" data-gap="Reclama y verifica tu perfil de negocio">
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__label">
+                <span class="check__tag"><span>01</span> VER</span>
+                <span class="check__text">Mi Perfil de Negocio de Google está reclamado y verificado.</span>
+              </span>
+            </label>
+
+            <label class="check__item">
+              <input type="checkbox" data-weight="20" data-group="profile" data-gap="Corrige tus horarios, teléfono, dirección y servicios">
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__label">
+                <span class="check__tag"><span>02</span> VER</span>
+                <span class="check__text">Mis horarios, teléfono, dirección y servicios están correctos en todos lados.</span>
+              </span>
+            </label>
+
+            <label class="check__item">
+              <input type="checkbox" data-weight="15" data-group="profile" data-gap="Agrega fotos reales de tu trabajo y tu local">
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__label">
+                <span class="check__tag"><span>03</span> VER</span>
+                <span class="check__text">Tengo más de 10 fotos reales de mi trabajo y mi local.</span>
+              </span>
+            </label>
+
+            <label class="check__item">
+              <input type="checkbox" data-weight="15" data-group="profile" data-gap="Responde reseñas y pídeles nuevas a tus clientes contentos">
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__label">
+                <span class="check__tag"><span>04</span> CONFIAR</span>
+                <span class="check__text">Respondo las reseñas y les pido nuevas a mis clientes contentos.</span>
+              </span>
+            </label>
+
+            <label class="check__item">
+              <input type="checkbox" data-weight="20" data-group="website" data-gap="Consigue un sitio web para celular con contacto en un toque">
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__label">
+                <span class="check__tag"><span>05</span> CONFIAR</span>
+                <span class="check__text">Tengo un sitio web que funciona bien en el celular, con llamada, reservación o mensaje en un toque.</span>
+              </span>
+            </label>
+
+            <label class="check__item">
+              <input type="checkbox" data-weight="10" data-group="ads" data-gap="Haz anuncios que lleven gente a tu perfil o sitio">
+              <span class="check__box" aria-hidden="true"></span>
+              <span class="check__label">
+                <span class="check__tag"><span>06</span> CONTACTAR</span>
+                <span class="check__text">Hago anuncios (Google o Meta) que mandan gente a mi perfil o a mi sitio.</span>
+              </span>
+            </label>
+
+          </div>
+
+          <aside class="check__result">
+
+            <div class="gauge">
+
+              <svg class="gauge__svg" viewBox="0 0 140 140" aria-hidden="true" focusable="false">
+                <circle class="gauge__ticks" cx="70" cy="70" r="67" pathLength="120"></circle>
+                <circle class="gauge__track" cx="70" cy="70" r="55"></circle>
+                <circle class="gauge__arc" cx="70" cy="70" r="55" pathLength="100" transform="rotate(-90 70 70)"></circle>
+              </svg>
+
+              <div class="gauge__value" aria-hidden="true">
+                <span data-check-score>0</span>
+                <small>/ 100</small>
+              </div>
+
+            </div>
+
+            <div aria-live="polite">
+
+              <span class="sr-only" data-check-sr></span>
+
+              <div class="check__grade" data-grade="idle">
+                <h3 class="check__grade-title">Tu puntaje aparece aquí.</h3>
+                <p class="check__grade-text">Marca lo que sea cierto hoy.</p>
+              </div>
+
+              <div class="check__grade" data-grade="low" hidden>
+                <h3 class="check__grade-title">Difícil de encontrar.</h3>
+                <p class="check__grade-text">Quien te busque puede terminar con la competencia primero. La buena noticia: las mayores mejoras aquí suelen ser arreglos rápidos.</p>
+              </div>
+
+              <div class="check__grade" data-grade="mid" hidden>
+                <h3 class="check__grade-title">Visible a medias.</h3>
+                <p class="check__grade-text">Ya estás en el mapa, pero probablemente pierdes clientes por algunos huecos. Cerrarlos suele ser rápido.</p>
+              </div>
+
+              <div class="check__grade" data-grade="high" hidden>
+                <h3 class="check__grade-title">Se ve fuerte.</h3>
+                <p class="check__grade-text">Tu base es sólida. Con unos ajustes, estarás por delante de la mayoría de los negocios locales.</p>
+              </div>
+
+              <div class="check__grade" data-grade="full" hidden>
+                <h3 class="check__grade-title">Todo listo.</h3>
+                <p class="check__grade-text">No hay nada que arreglar de esta lista. Ahora se trata de sacarle más provecho a lo que ya tienes.</p>
+              </div>
+
+            </div>
+
+            <div class="check__gaps" data-check-gaps-wrap hidden>
+              <p class="eyebrow">Arregla primero</p>
+              <ul data-check-gaps></ul>
+            </div>
+
+            <div class="check__next" data-next="profile" hidden>
+              <p>Empieza con: <strong>Limpieza de Perfil de Negocio</strong>, desde $120.</p>
+              <a href="#pricing-profile">Ver precios de perfil ↓</a>
+            </div>
+
+            <div class="check__next" data-next="website" hidden>
+              <p>Empieza con: un <strong>Sitio Web</strong>, desde $500.</p>
+              <a href="#pricing-website">Ver precios de sitio web ↓</a>
+            </div>
+
+            <div class="check__next" data-next="ads" hidden>
+              <p>Empieza con: <strong>Anuncios</strong>, desde $350/mes más la inversión en anuncios.</p>
+              <a href="#pricing-ads">Ver precios de anuncios ↓</a>
+            </div>
+
+            <div class="check__next" data-next="full" hidden>
+              <p>Sigue con: un <strong>plan de Mantenimiento</strong> para mantenerlo al día, o impulsa lo que ya funciona.</p>
+              <a href="#care">Ver planes de mantenimiento ↓</a>
+            </div>
+
+            <div class="check__actions">
+
+              <a
+                class="button button--accent"
+                data-check-cta
+                href="mailto:lowatlas.studio@gmail.com?subject=Revisi%C3%B3n%20gratis"
+                data-subject="Revisión de presencia"
+                data-intro="Hola Lowatlas, probé la revisión de presencia en tu sitio."
+                data-score-label="Mi puntaje:"
+                data-gaps-label="Mayores huecos:"
+                data-footer="Nombre del negocio: | La mejor forma de contactarme:"
+              >
+                Enviar resultados a Lowatlas ↗
+              </a>
+
+              <p class="check__reply">Te respondo con lo que yo arreglaría primero.</p>
+
+              <button type="button" class="check__reset" data-check-reset>Empezar de nuevo</button>
+
+            </div>
+
+          </aside>
+
         </div>
 
       </div>
@@ -447,6 +785,10 @@
 
     <!-- =====================================================
          PRICING
+         EDIT PRICES HERE. Each service is one .price-group.
+         "Desde" prices only: bigger scope is quoted separately.
+         Also update the matching numbers in SERVICES (top of page),
+         the PRESENCE CHECK next-step blocks, and index.html.
          ===================================================== -->
 
     <section id="pricing" class="section">
@@ -466,98 +808,319 @@
             </h2>
 
             <p class="section-heading__copy">
-              Estos son precios iniciales para proyectos de alcance estándar. El precio final depende de la cantidad de contenido, páginas, funciones y revisiones necesarias. Los proyectos más grandes o complejos se cotizan por separado.
+              Estos son precios iniciales para trabajo de alcance estándar. El precio final depende del contenido, las páginas, las plataformas y las revisiones necesarias. Los proyectos más grandes o complejos se cotizan por separado, y siempre sabrás el número antes de que yo empiece.
             </p>
 
           </div>
 
         </div>
 
-        <div class="pricing-grid">
 
-          <article class="price-card">
+        <!-- ---------- 01 · VER · LIMPIEZA DE PERFIL ---------- -->
 
-            <p class="eyebrow">
-              Essential
-            </p>
+        <div id="pricing-profile" class="price-group">
 
-            <h3 class="price-card__name">
-              Presencia Profesional
-            </h3>
+          <div class="price-group__head">
 
-            <p class="price-card__purpose">
-              Para un negocio pequeño que necesita una presencia profesional y clara.
-            </p>
-
-            <div class="price-card__price">
-              <span class="price-prefix">Starting at</span>
-              $500
+            <div>
+              <p class="price-group__step"><span>01</span> VER</p>
+              <h3 class="price-group__name">Limpieza de Perfil de Negocio</h3>
             </div>
 
-            <div class="price-card__monthly">
-              o $50/mes × 12
-            </div>
+            <p class="price-group__blurb">Pago único. Google, Meta o ambos. Después de la limpieza, un plan de Mantenimiento opcional lo mantiene al día.</p>
 
-            <ul class="price-card__list">
-              <li>Aproximadamente 5 secciones principales</li><li>Diseño personalizado para móvil</li><li>Servicios e información del negocio</li><li>Galería estándar</li><li>Formulario o botones de contacto</li><li>Enlaces a redes sociales</li><li>Conexión de dominio y lanzamiento</li><li>Metadatos básicos para búsqueda</li><li>2 rondas de revisiones</li>
-            </ul>
+          </div>
 
-            <a
-              class="button"
-              href="mailto:lowatlas.studio@gmail.com?subject=Lowatlas%20Essential"
-            >
-              Preguntar por Essential ↗
-            </a>
+          <div class="pricing-grid">
 
-          </article>
+            <article class="price-card">
+
+              <p class="eyebrow">
+                Una plataforma
+              </p>
+
+              <h3 class="price-card__name">
+                Perfil Individual
+              </h3>
+
+              <p class="price-card__purpose">
+                Perfil de Negocio de Google o Meta (Facebook + Instagram). Tú eliges.
+              </p>
+
+              <div class="price-card__price">
+                <span class="price-prefix">Desde</span>
+                $120
+              </div>
+
+              <div class="price-card__monthly">
+                pago único
+              </div>
+
+              <ul class="price-card__list">
+                <li>Reclamar o recuperar el perfil, cuando sea posible</li><li>Corregir nombre, dirección, teléfono, horarios y categorías</li><li>Servicios, descripción y enlaces</li><li>Limpieza de fotos + imágenes de portada y perfil</li><li>Botón de llamada, reservación o mensaje</li><li>La cuenta sigue siendo tuya; yo trabajo con acceso de administrador</li>
+              </ul>
+
+              <a
+                class="button"
+                href="mailto:lowatlas.studio@gmail.com?subject=Lowatlas%20Perfil%20Individual"
+              >
+                Preguntar por Perfil Individual ↗
+              </a>
+
+            </article>
 
 
-          <article class="price-card price-card--featured">
+            <article class="price-card price-card--featured">
 
-            <span class="price-card__badge">
-              Más espacio
-            </span>
+              <span class="price-card__badge">
+                Mejor valor
+              </span>
 
-            <p class="eyebrow">
-              Business
-            </p>
+              <p class="eyebrow">
+                Ambas plataformas
+              </p>
 
-            <h3 class="price-card__name">
-              Presentación Ampliada
-            </h3>
+              <h3 class="price-card__name">
+                Presencia Completa
+              </h3>
 
-            <p class="price-card__purpose">
-              Para un negocio con más servicios, más contenido o una presencia más completa.
-            </p>
+              <p class="price-card__purpose">
+                Google y Meta, alineados para que todos tus perfiles cuenten la misma historia.
+              </p>
 
-            <div class="price-card__price">
-              <span class="price-prefix">Starting at</span>
-              $800
-            </div>
+              <div class="price-card__price">
+                <span class="price-prefix">Desde</span>
+                $200
+              </div>
 
-            <div class="price-card__monthly">
-              o $75/mes × 12
-            </div>
+              <div class="price-card__monthly">
+                pago único
+              </div>
 
-            <ul class="price-card__list">
-              <li>Todo lo incluido en Essential</li><li>Páginas o secciones ampliadas</li><li>Galería o portafolio más grande</li><li>Servicios múltiples o ampliados</li><li>Integración con enlace de reservación</li><li>Reseñas y sección FAQ</li><li>Analíticas básicas</li><li>Más diseño personalizado</li><li>3 rondas de revisiones</li>
-            </ul>
+              <ul class="price-card__list">
+                <li>Todo lo incluido en Perfil Individual</li><li>Google y Meta limpiados juntos</li><li>Información del negocio consistente en ambos</li><li>Enlaces entre perfil, sitio web e Instagram</li><li>Ahorras $40 frente a dos limpiezas por separado</li>
+              </ul>
 
-            <a
-              class="button button--accent"
-              href="mailto:lowatlas.studio@gmail.com?subject=Lowatlas%20Business"
-            >
-              Preguntar por Business ↗
-            </a>
+              <a
+                class="button button--accent"
+                href="mailto:lowatlas.studio@gmail.com?subject=Lowatlas%20Presencia%20Completa"
+              >
+                Preguntar por Presencia Completa ↗
+              </a>
 
-          </article>
+            </article>
+
+          </div>
 
         </div>
+
+
+        <!-- ---------- 02 · CONFIAR · SITIO WEB ---------- -->
+
+        <div id="pricing-website" class="price-group">
+
+          <div class="price-group__head">
+
+            <div>
+              <p class="price-group__step"><span>02</span> CONFIAR</p>
+              <h3 class="price-group__name">Sitio Web</h3>
+            </div>
+
+            <p class="price-group__blurb">Un sitio simple conectado a tu perfil. Paga una vez o repártelo en 12 meses.</p>
+
+          </div>
+
+          <div class="pricing-grid">
+
+            <article class="price-card">
+
+              <p class="eyebrow">
+                Essential
+              </p>
+
+              <h3 class="price-card__name">
+                Presencia Profesional
+              </h3>
+
+              <p class="price-card__purpose">
+                Para un negocio pequeño que necesita una presencia profesional y clara.
+              </p>
+
+              <div class="price-card__price">
+                <span class="price-prefix">Desde</span>
+                $500
+              </div>
+
+              <div class="price-card__monthly">
+                o $50/mes × 12
+              </div>
+
+              <ul class="price-card__list">
+                <li>Aproximadamente 5 secciones principales</li><li>Diseño personalizado para móvil</li><li>Servicios e información del negocio</li><li>Galería estándar</li><li>Formulario o botones de contacto</li><li>Enlazado a tu perfil de Google / Meta y a tus redes</li><li>Conexión de dominio y lanzamiento</li><li>Cloudflare básico: HTTPS, protección DDoS y de bots</li><li>Metadatos básicos para búsqueda</li><li>2 rondas de revisiones</li>
+              </ul>
+
+              <a
+                class="button"
+                href="mailto:lowatlas.studio@gmail.com?subject=Lowatlas%20Essential"
+              >
+                Preguntar por Essential ↗
+              </a>
+
+            </article>
+
+
+            <article class="price-card price-card--featured">
+
+              <span class="price-card__badge">
+                Más espacio
+              </span>
+
+              <p class="eyebrow">
+                Business
+              </p>
+
+              <h3 class="price-card__name">
+                Presentación Ampliada
+              </h3>
+
+              <p class="price-card__purpose">
+                Para un negocio con más servicios, más contenido o una presencia más completa.
+              </p>
+
+              <div class="price-card__price">
+                <span class="price-prefix">Desde</span>
+                $800
+              </div>
+
+              <div class="price-card__monthly">
+                o $75/mes × 12
+              </div>
+
+              <ul class="price-card__list">
+                <li>Todo lo incluido en Essential</li><li>Páginas o secciones ampliadas</li><li>Galería o portafolio más grande</li><li>Servicios múltiples o ampliados</li><li>Integración con enlace de reservación</li><li>Reseñas y sección FAQ</li><li>Analíticas básicas</li><li>Seguridad avanzada: reglas de firewall + protección de correo</li><li>Más diseño personalizado</li><li>3 rondas de revisiones</li>
+              </ul>
+
+              <a
+                class="button button--accent"
+                href="mailto:lowatlas.studio@gmail.com?subject=Lowatlas%20Business"
+              >
+                Preguntar por Business ↗
+              </a>
+
+            </article>
+
+          </div>
+
+        </div>
+
+
+        <!-- ---------- 03 · CONTACTAR · ANUNCIOS ---------- -->
+
+        <div id="pricing-ads" class="price-group">
+
+          <div class="price-group__head">
+
+            <div>
+              <p class="price-group__step"><span>03</span> CONTACTAR</p>
+              <h3 class="price-group__name">Anuncios en Google y Meta</h3>
+            </div>
+
+            <p class="price-group__blurb">Cuota mensual de gestión. La inversión en anuncios se paga aparte, directo a Google o Meta, así siempre ves a dónde va el dinero.</p>
+
+          </div>
+
+          <div class="pricing-grid">
+
+            <article class="price-card">
+
+              <p class="eyebrow">
+                Una plataforma
+              </p>
+
+              <h3 class="price-card__name">
+                Plataforma Individual
+              </h3>
+
+              <p class="price-card__purpose">
+                Google Ads o Meta Ads, manejados por mí.
+              </p>
+
+              <div class="price-card__price">
+                <span class="price-prefix">Desde</span>
+                $350
+              </div>
+
+              <div class="price-card__monthly">
+                por mes + inversión en anuncios
+              </div>
+
+              <ul class="price-card__list">
+                <li>Cuenta de anuncios creada a tu nombre</li><li>Segmentación local en tu zona de servicio</li><li>Texto de anuncios y creativos básicos</li><li>Pensado para llamadas, direcciones, mensajes o cotizaciones</li><li>Ajustes continuos cada mes</li><li>Resumen mensual de resultados</li><li>Inicia con un plazo de 3 meses</li>
+              </ul>
+
+              <a
+                class="button"
+                href="mailto:lowatlas.studio@gmail.com?subject=Lowatlas%20Anuncios%20Plataforma%20Individual"
+              >
+                Preguntar por Plataforma Individual ↗
+              </a>
+
+            </article>
+
+
+            <article class="price-card price-card--featured">
+
+              <span class="price-card__badge">
+                Mejor valor
+              </span>
+
+              <p class="eyebrow">
+                Ambas plataformas
+              </p>
+
+              <h3 class="price-card__name">
+                Google + Meta
+              </h3>
+
+              <p class="price-card__purpose">
+                Los dos canales trabajando juntos como un solo plan.
+              </p>
+
+              <div class="price-card__price">
+                <span class="price-prefix">Desde</span>
+                $500
+              </div>
+
+              <div class="price-card__monthly">
+                por mes + inversión en anuncios
+              </div>
+
+              <ul class="price-card__list">
+                <li>Todo lo incluido en Plataforma Individual</li><li>Campañas de Google Ads y Meta Ads</li><li>Presupuesto dividido según lo que esté funcionando</li><li>Un solo resumen mensual combinado</li><li>Ahorras $200 al mes frente a manejar cada una por separado</li>
+              </ul>
+
+              <a
+                class="button button--accent"
+                href="mailto:lowatlas.studio@gmail.com?subject=Lowatlas%20Anuncios%20Google%20%2B%20Meta"
+              >
+                Preguntar por Google + Meta ↗
+              </a>
+
+            </article>
+
+          </div>
+
+        </div>
+
 
         <div class="price-note">
 
           <div>
             ¿Necesitas más de lo incluido? Páginas adicionales, más contenido, formularios personalizados, pagos, bases de datos o funciones especiales se cotizan por separado.
+          </div>
+
+          <div>
+            La inversión en anuncios se paga directo a Google o Meta, aparte de la cuota de gestión.
           </div>
 
           <div>
@@ -572,30 +1135,68 @@
 
 
     <!-- =====================================================
-         LIMITED AVAILABILITY
+         CARE PLANS
          ===================================================== -->
 
-    <section class="section">
+    <section id="care" class="section">
 
       <div class="container">
 
-        <div class="capacity">
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            Mantenimiento
+          </p>
+
+          <h2 class="display section-heading__title">
+            ¿Quieres que todo siga al día después del lanzamiento?
+          </h2>
+
+        </div>
+
+        <div class="care">
 
           <div>
 
-            <p class="eyebrow">
-              Limitado a propósito
-            </p>
+            <div class="care__price">
+              $99/mes
+            </div>
 
-            <h2 class="capacity__title">
-              Menos proyectos. Más atención.
-            </h2>
+            <p class="care__copy">
+              <strong>Mantenimiento de Perfil.</strong> $99/mes para una plataforma, $149/mes para Google y Meta. Opcional después de la limpieza. Actualizaciones mensuales de horarios, fotos, publicaciones, servicios y respuestas a reseñas para que tu perfil no vuelva a quedarse desactualizado.
+            </p>
 
           </div>
 
-          <p class="capacity__copy">
-            Lowatlas acepta un número limitado de proyectos a la vez para que cada negocio reciba atención directa y enfocada.
-          </p>
+          <a
+            class="button"
+            href="mailto:lowatlas.studio@gmail.com?subject=Lowatlas%20Mantenimiento%20de%20Perfil"
+          >
+            Preguntar por mantenimiento de perfil ↗
+          </a>
+
+        </div>
+
+        <div class="care">
+
+          <div>
+
+            <div class="care__price">
+              $50/mes
+            </div>
+
+            <p class="care__copy">
+              <strong>Mantenimiento de Sitio.</strong> Opcional después del lanzamiento. Cubre cambios pequeños como fotos, texto, servicios, precios, reseñas y enlaces, y mantiene tus ajustes de seguridad revisados. Rediseños grandes o funciones nuevas se cotizan aparte.
+            </p>
+
+          </div>
+
+          <a
+            class="button"
+            href="mailto:lowatlas.studio@gmail.com?subject=Lowatlas%20Website%20Care"
+          >
+            Preguntar por mantenimiento de sitio ↗
+          </a>
 
         </div>
 
@@ -625,33 +1226,30 @@
         </div>
 
         <div class="process-grid">
-          
+
         <article class="process-step">
           <span class="process-step__number">01</span>
           <div>
             <h3>Cuéntame sobre tu negocio</h3>
-            <p>Servicios, clientes, objetivos y qué debe hacer el sitio.</p>
+            <p>Servicios, clientes, objetivos y dónde te encuentra la gente hoy.</p>
           </div>
         </article>
-        
 
         <article class="process-step">
           <span class="process-step__number">02</span>
           <div>
             <h3>Envía tu contenido</h3>
-            <p>Fotos, logo, reseñas, servicios, precios y enlaces.</p>
+            <p>Fotos, logo, servicios, precios y acceso de administrador a tus perfiles (nunca tus contraseñas).</p>
           </div>
         </article>
-        
 
         <article class="process-step">
           <span class="process-step__number">03</span>
           <div>
-            <h3>Diseño + desarrollo</h3>
-            <p>Creo la primera versión según el alcance acordado.</p>
+            <h3>Arreglo + construyo</h3>
+            <p>Limpieza de perfil, sitio web o configuración de anuncios, según el alcance acordado.</p>
           </div>
         </article>
-        
 
         <article class="process-step">
           <span class="process-step__number">04</span>
@@ -660,63 +1258,14 @@
             <p>Hacemos las revisiones incluidas y ajustamos detalles.</p>
           </div>
         </article>
-        
 
         <article class="process-step">
           <span class="process-step__number">05</span>
           <div>
             <h3>Lanzamiento</h3>
-            <p>Conectamos el dominio, revisamos todo y publicamos.</p>
+            <p>Todo sale en vivo y queda a tu nombre: perfiles, dominio y cuentas de anuncios.</p>
           </div>
         </article>
-        
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         WEBSITE CARE
-         ===================================================== -->
-
-    <section class="section">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <p class="eyebrow">
-            Mantenimiento
-          </p>
-
-          <h2 class="display section-heading__title">
-            ¿Quieres que el sitio siga siendo administrado después del lanzamiento?
-          </h2>
-
-        </div>
-
-        <div class="care">
-
-          <div>
-
-            <div class="care__price">
-              $50/mes
-            </div>
-
-            <p class="care__copy">
-              Opcional después del lanzamiento. Cubre cambios pequeños como fotos, texto, servicios, precios, reseñas y enlaces. Rediseños grandes o funciones nuevas se cotizan aparte.
-            </p>
-
-          </div>
-
-          <a
-            class="button"
-            href="mailto:lowatlas.studio@gmail.com?subject=Lowatlas%20Website%20Care"
-          >
-            Preguntar por mantenimiento ↗
-          </a>
 
         </div>
 
@@ -746,60 +1295,79 @@
         </div>
 
         <div class="faq-list">
-          
-        <article class="faq-item">
-          <button class="faq-question" aria-expanded="false">
-            <span>¿Cuánto tarda un sitio?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">Normalmente entre 1 y 3 semanas según el alcance, qué tan rápido se entregue el contenido y las revisiones.</div>
-        </article>
-        
 
         <article class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>¿Quién es dueño del dominio?</span>
+            <span>¿Cuánto tarda?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">Tú. El dominio debe permanecer a nombre del negocio. Lowatlas puede ayudar a configurarlo y conectarlo.</div>
+          <div class="faq-answer">Los sitios web normalmente toman entre 1 y 3 semanas según el alcance, qué tan rápido se entregue el contenido y las revisiones. Las limpiezas de perfil suelen ser más rápidas, aunque a veces Google y Meta tardan en verificar los cambios.</div>
         </article>
-        
+
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Quién es dueño de mis cuentas y mi dominio?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Tú. Tu dominio, tus perfiles de Google y Meta y tus cuentas de anuncios quedan a tu nombre. Yo trabajo como administrador y puedes quitarme el acceso en cualquier momento.</div>
+        </article>
 
         <article class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>¿Tengo que pagar mensualmente?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">No. Puedes elegir el precio único. La opción mensual es solo otra forma de pago. El mantenimiento también es opcional.</div>
+          <div class="faq-answer">No para las limpiezas de perfil ni los sitios web: puedes elegir el precio único (la opción mensual del sitio es solo otra forma de pago). Los planes de mantenimiento son opcionales. La gestión de anuncios es un servicio mensual y empieza con un plazo de 3 meses.</div>
         </article>
-        
+
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Cuánto cuestan realmente los anuncios?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Dos partes: mi cuota de gestión ($350 por una plataforma, $500 por ambas) y el presupuesto de anuncios que pagas directo a Google o Meta. Acordamos ese presupuesto juntos, y empezar con poco está bien.</div>
+        </article>
 
         <article class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>¿Puedo pedir cambios después?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">Sí. Cambios pequeños pueden cubrirse con mantenimiento. Páginas nuevas, rediseños o funciones nuevas se cotizan aparte.</div>
+          <div class="faq-answer">Sí. Los cambios de contenido de rutina pueden cubrirse con un plan de mantenimiento. Cambios más grandes, páginas nuevas o funciones nuevas se cotizan aparte.</div>
         </article>
-        
 
         <article class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>¿Qué necesito enviar?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">Información del negocio, servicios, fotos, logo si tienes uno, reseñas, redes sociales y cualquier contenido específico que quieras incluir.</div>
+          <div class="faq-answer">Normalmente información del negocio, servicios, fotos, logo si tienes uno y enlaces a tus perfiles actuales. Para perfiles y anuncios, te pediré que me agregues como administrador. Nunca necesito tus contraseñas.</div>
         </article>
-        
+
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Mi sitio web es seguro?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Los sitios se construyen estáticos (sin base de datos ni plugins que atacar) y funcionan detrás de Cloudflare con HTTPS, protección contra DDoS y bots, y encabezados de seguridad. Ninguna configuración es 100% imposible de hackear, pero esto elimina las formas más comunes en que se rompen los sitios de negocios pequeños.</div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>¿Este sitio web me rastrea?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">No. Este sitio no usa cookies ni ejecuta analíticas, píxeles de anuncios o scripts de terceros. Los detalles están en la página de privacidad.</div>
+        </article>
 
         <article class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>¿Qué pasa si necesito algo más grande?</span>
             <span class="faq-icon">+</span>
           </button>
-          <div class="faq-answer">Se convierte en una cotización personalizada. $500 y $800 son precios iniciales para sitios pequeños de alcance controlado, no precios fijos para trabajo ilimitado.</div>
+          <div class="faq-answer">Se convierte en una cotización personalizada. Estos son precios iniciales para trabajo sencillo de negocios pequeños, no precios fijos para un alcance ilimitado.</div>
         </article>
-        
+
         </div>
 
       </div>
@@ -808,18 +1376,17 @@
 
   </main>
 
-  
 <footer id="contact" class="contact">
   <div class="container">
 
     <p class="eyebrow">Inicia un proyecto</p>
 
     <h2 class="display contact__title">
-      ¿Listo para un <span>mejor sitio web?</span>
+      ¿Listo para una <span>mejor presencia en línea?</span>
     </h2>
 
-    <p class="muted" style="max-width:620px;line-height:1.7;margin-bottom:24px;">
-      Cuéntame sobre tu negocio, qué necesitas que haga el sitio y qué contenido ya tienes.
+    <p class="muted contact__copy">
+      Cuéntame sobre tu negocio, cómo apareces en línea hoy y qué quieres más: llamadas, reservaciones o clientes en tu puerta.
     </p>
 
     <a class="button button--accent" href="mailto:lowatlas.studio@gmail.com">
@@ -830,23 +1397,23 @@
 
       <div>
         <div class="brand">LOWATLAS</div>
-        <p class="muted">Sitios web profesionales sin el precio de una agencia.</p>
+        <p class="muted">Sitios web, perfiles de negocio y anuncios para negocios locales, sin el precio de una agencia.</p>
+        <p class="footer__privacy">Sin cookies. Sin rastreadores. Sin scripts de terceros.</p>
       </div>
 
       <div class="footer__links">
-        
+        <a href="index-es.html#services">Servicios</a>
         <a href="index-es.html#work">Trabajo</a>
         <a href="index-es.html#pricing">Precios</a>
         <a href="index-es.html#faq">Preguntas</a>
+        <a href="privacy-es.html">Privacidad</a>
         <a href="mailto:lowatlas.studio@gmail.com">Correo</a>
-        
       </div>
 
     </div>
 
   </div>
 </footer>
-
 
   <script src="script.js"></script>
 

@@ -4,8 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+
+  <!-- SECURITY: this Content Security Policy makes the browser refuse any
+       third-party script, so no tracker can load by accident.
+       If you ever add analytics or ad pixels: update this line (and _headers),
+       and add a consent step first. See CLOUDFLARE-SETUP.md. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://images.unsplash.com; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <title>Blackout Customs — Lowatlas</title>
+
+  <link rel="canonical" href="https://lowatlas.com/blackout-customs-es.html">
 
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -24,12 +34,10 @@
     </a>
 
     <nav class="nav__links" aria-label="Main navigation">
-      
-        <a href="index-es.html#work">Trabajo</a>
-        <a href="index-es.html#pricing">Precios</a>
-        <a href="index-es.html#process">Proceso</a>
-        <a href="index-es.html#faq">Preguntas</a>
-        
+      <a href="index-es.html#services">Servicios</a>
+      <a href="index-es.html#work">Trabajo</a>
+      <a href="index-es.html#pricing">Precios</a>
+      <a href="index-es.html#faq">Preguntas</a>
     </nav>
 
     <div class="nav__right">
@@ -39,12 +47,10 @@
         Disponibilidad limitada
       </div>
 
-      
-        <div class="language-switch">
-          <a href="blackout-customs.html">EN</a>
-          <a class="active" href="blackout-customs-es.html">ES</a>
-        </div>
-        
+      <div class="language-switch">
+        <a href="blackout-customs.html" hreflang="en" lang="en">EN</a>
+        <a class="active" aria-current="page" href="blackout-customs-es.html" hreflang="es" lang="es">ES</a>
+      </div>
 
     </div>
 
@@ -109,7 +115,7 @@
 
         <!-- LOWATLAS PROJECT PATH -->
 
-        <div class="project-signal" style="margin-top:44px;">
+        <div class="project-signal project-signal--spaced">
           <div><span>01</span> Ver la marca</div>
 <div><span>02</span> Confiar</div>
 <div><span>03</span> Cotizar</div>
@@ -180,11 +186,11 @@
     <p class="eyebrow">Inicia un proyecto</p>
 
     <h2 class="display contact__title">
-      ¿Listo para un <span>mejor sitio web?</span>
+      ¿Listo para una <span>mejor presencia en línea?</span>
     </h2>
 
-    <p class="muted" style="max-width:620px;line-height:1.7;margin-bottom:24px;">
-      Cuéntame sobre tu negocio, qué necesitas que haga el sitio y qué contenido ya tienes.
+    <p class="muted contact__copy">
+      Cuéntame sobre tu negocio, cómo apareces en línea hoy y qué quieres más: llamadas, reservaciones o clientes en tu puerta.
     </p>
 
     <a class="button button--accent" href="mailto:lowatlas.studio@gmail.com">
@@ -195,16 +201,17 @@
 
       <div>
         <div class="brand">LOWATLAS</div>
-        <p class="muted">Sitios web profesionales sin el precio de una agencia.</p>
+        <p class="muted">Sitios web, perfiles de negocio y anuncios para negocios locales, sin el precio de una agencia.</p>
+        <p class="footer__privacy">Sin cookies. Sin rastreadores. Sin scripts de terceros.</p>
       </div>
 
       <div class="footer__links">
-        
+        <a href="index-es.html#services">Servicios</a>
         <a href="index-es.html#work">Trabajo</a>
         <a href="index-es.html#pricing">Precios</a>
         <a href="index-es.html#faq">Preguntas</a>
+        <a href="privacy-es.html">Privacidad</a>
         <a href="mailto:lowatlas.studio@gmail.com">Correo</a>
-        
       </div>
 
     </div>
